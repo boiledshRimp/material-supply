@@ -1,0 +1,12 @@
+.contents
+  %p.username
+    = @username
+    さんの投稿一覧
+  .contents__inner
+    - @materials.each do |material|
+    
+      = render partial: "materials/material", locals: { material: material }
+
+  %span.paginate
+    = paginate(@materials)
+

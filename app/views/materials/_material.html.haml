@@ -1,0 +1,10 @@
+.material__object__contents
+  = link_to material_path(material.id),{"data-turbolinks": "false"} do
+    .contents__img{style: "background-image: url(#{material.image});"}
+      -#= image_tag material.image.url, class: 'lower-message__image' if material.image.present?
+    .info__container
+      %ul.info__user
+        %li
+          %span.name
+            = link_to '投稿者', user_path(material.user.id),{"data-turbolinks": "false"}
+            = material.user.username

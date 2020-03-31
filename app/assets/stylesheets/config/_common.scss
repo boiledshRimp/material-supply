@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  color:#333;
+}
+
+.p0 {
+  padding:0 !important;
+}
+
+.p7 {
+  padding-top:7vh !important;
+}
+
+.contents{
+  width:80%;
+  margin:0 auto;
+  min-height: 400px;
+  padding-top: 5vh;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.material__object__contents {
+  width: 49%;
+}
+
+.contents__show{
+  width:50%;
+  margin:0 auto;
+  min-height: 400px;
+  padding-top: 5vh;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+header{
+  font-size: 1.2vw;
+  padding:2vh 10vh;
+  position: fixed;
+  border-bottom: 1px solid #d8d8d8;
+  background: white;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  align-items: center;
+  h1{
+    width:30%;
+  }
+  .header__button{
+    width:70%;
+    display: flex;
+    justify-content: flex-end;
+    a.button{
+      border: 1px solid #0096fa;
+      margin-left: 1vw;
+      padding: 0.5vh;
+      border-radius: 0.5vh;
+    }
+    span.button{
+      margin-left: 1vw;
+      padding: 0.5vh;
+      border-radius: 0.5vh;
+    }
+  }
+}
+
+body{
+  background:#f5f5f5;
+  font-size: 1.2vw;
+}
+
+footer{
+  font-size: 1.2vw;
+  padding:2vh;
+  border-top: 1px solid #d8d8d8;
+  background: white;
+  display: flex;
+  justify-content: center;
+  margin-top:5vh;
+}
+
+ul.material__post__button {
+  position: fixed;
+  background: #0096fa;
+  bottom: 50vh;
+  right: 10vw;
+  border-radius: 1vh;
+  text-align: center;
+  border: 2px solid white;
+  a{
+    color: white;
+    padding: 2vh;
+    display: block;
+  }
+  li{
+    &:last-child{
+      border-top: 1px solid #0085de;
+    }
+  }
+  
+}
+
+span.paginate{
+  display: inline-block;
+  margin: 1vh 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.log__regi{
+  padding-top: 5vh;
+  margin: auto;
+  width: 50%;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.contents__img {
+  margin: auto;
+  margin-top: 5vh;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 1vw;
+  overflow: hidden;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #d8d8d8;
+  border-radius: 1vh;
+}
+
+.contents__img__show {
+  margin: auto;
+  margin-top: 5vh;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  img{
+    width: 100%;
+  }
+}

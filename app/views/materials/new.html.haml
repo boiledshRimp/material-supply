@@ -1,0 +1,9 @@
+.contents
+  .contents__post__field
+    = form_with(model: @material, local: true) do |form|
+      %h3
+        テキストと画像は両方とも必須です。
+        %br 
+        対応拡張子はjpeg、jpg、pngです。
+
+      = render partial: "form", locals: { form: form }

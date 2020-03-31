@@ -1,0 +1,6 @@
+.contents
+  .contents__post__field
+    = form_with(model: @material, local: true) do |form|
+      %h3
+        編集する
+      = render partial: "form", locals: { form: form }

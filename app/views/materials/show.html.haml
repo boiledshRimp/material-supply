@@ -1,0 +1,47 @@
+.contents__show.p7
+
+  .contents__img__show
+    = image_tag @material.image.url, class: 'lower-message__image' if @material.image.present?
+
+  .info__container
+    %ul.info__user
+      %li
+        %span.name
+          = link_to '投稿者', user_path(@material.user.id),{"data-turbolinks": "false"}
+          = @material.user.username
+    %ul.info__container__materials.show  
+      - if user_signed_in? && current_user.id == @material.user_id
+        %li
+          = link_to '編集', edit_material_path(@material.id), method: :get
+        %li
+          = link_to '削除', material_path(@material.id), method: :delete, data: { confirm: '本当に削除しますか?' }
+
+  .material_caption
+    = simple_format(@material.text)
+
+
+  .container
+    - if current_user
+      = form_with(model: [@material, @comment], local: true, id: "new_comment") do |form|
+        = form.text_area :text, placeholder: "コメントする", rows: "2", class: "new_text"
+        = form.submit "SEND", class: "form__submit"
+    - else
+      %strong
+        %p コメントはログインしないとできません。
+    .add_comments
+      %h4.comennt コメント一覧
+      - if @comments
+        - @comments.each do |comment|
+          %p.comennt
+            %strong
+              = link_to comment.user.username, user_path(comment.user_id)
+              ：
+            = comment.text
+
+    %div.username__post__all
+      = @material.user.username
+      さんの投稿一覧
+    %ul.multiple
+      - @materials.each do |material| 
+        = link_to material_path(material.id),{"data-turbolinks": "false"} do
+          %li.ex{style: "background-image: url(#{material.image});"}

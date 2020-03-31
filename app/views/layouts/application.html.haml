@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv": "Content-Type"}/
+    %title WEB素材提供サービスM-S-S
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    
+  %body
+
+    %header
+      %h1
+        = link_to "M-S-S", root_path,{"data-turbolinks": "false"}
+
+      - if user_signed_in?
+
+        .header__button
+
+          %ul
+            %li
+              %span.button
+                %span ユーザー名:
+                = current_user.username
+              %ul.material__post__button
+                %li
+                  = link_to  "投稿ページ", new_material_path,{"data-turbolinks": "false"}
+                %li#to__top
+                  = link_to  "先頭へ戻る"
+              = link_to "ログアウト", destroy_user_session_path, method: :delete , class: 'button'
+              = link_to "マイページ", "/users/#{current_user.id}" , class: 'button'    
+      - else
+        .header__button
+
+          %ul
+            %li
+              = link_to "ログイン", new_user_session_path, class: 'button'
+              = link_to "新規登録", new_user_registration_path, class: 'button'
+                  
+    = yield
+
+    %footer
+      %p
+        Copyright M-S-S 2020.

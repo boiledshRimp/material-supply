@@ -1,0 +1,29 @@
+.contents{
+  &__post{
+    height:50vh;
+    margin: 2vh 0 0 0;
+    background: gray;
+  }
+}
+.info__container {
+  text-align: center;
+  &__materials {
+    display: flex;
+  }
+  ul{
+    li{
+      margin-left:1vw;
+      padding: 0.5vw;
+      border-radius: 0.5vw;
+    }
+  }
+}
+ul.info__container__materials.show {
+  display: flex;
+  justify-content: flex-end;
+}
+.material_caption{
+  padding: 1vh;
+  background: white;
+  margin-bottom: 1vh;
+}

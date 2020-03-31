@@ -1,0 +1,29 @@
+form input[type="submit"] {
+  background-color: #0096fa;
+  border-radius: 1vh;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 1vh 0;
+  padding: 1vh;
+  border-radius: 1vh;
+}
+
+.search__form {
+  text-align: center;
+  padding: 8vh 0 0 0;
+  &__input{
+    width: 30%;
+    margin-right: 10px;
+  }
+  &__btn{
+    width: 10%;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.multiple { 
+  padding: 0;
+  margin:1vh 0 0 0;
+}
+.multiple img { 
+  width: 100%;
+}
+.multiple{
+  li.ex{
+    margin: 0;
+    width:100% !important;
+    height:20vh !important;
+    background-position: center center;
+    background-size: cover;
+    border-top:1px solid #d8d8d8;
+    border-bottom:1px solid #d8d8d8;
+  }
+}
+.multiple .slick-next { right: 1vw;　z-index: 100;}
+.multiple .slick-prev { left: 1vw; z-index: 100;}
