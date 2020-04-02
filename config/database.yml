@@ -47,9 +47,9 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
   <<: *default
   database: material-supply-service_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  username: material-supply-service
+  password: <%= ENV['MATERIAL-SUPPLY-SERVICE_DATABASE_PASSWORD'] %>

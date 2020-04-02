@@ -78,9 +78,11 @@ gem 'mini_magick'
 
 gem 'jquery-rails'
 
+
 group :production do
   gem 'unicorn', '5.4.1'
 end
+
 
 group :development, :test do
   gem 'capistrano'
