@@ -51,5 +51,6 @@ test:
 production:
   <<: *default
   database: material-supply-service_production
-  username: material-supply-service
-  password: <%= ENV['MATERIAL-SUPPLY-SERVICE_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
