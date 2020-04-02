@@ -3,10 +3,10 @@
 lock '3.12.1'
 
 # Capistranoのログの表示に利用する
-set :application, 'material-supply-service'
+set :application, 'material-supply-service-n'
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url,  'git@github.com:boiledshRimp/material-supply-service.git'
+set :repo_url,  'git@github.com:boiledshRimp/material-supply'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
@@ -16,7 +16,7 @@ set :rbenv_ruby, '2.5.1'
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/msso.pem'] 
+                  keys: ['~/.ssh/material-supply-service-n.pem'] 
 
 # プロセス番号を記載したファイルの場所
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
