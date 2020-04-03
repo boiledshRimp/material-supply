@@ -28,14 +28,6 @@ set :keep_releases, 5
 # secrets.yml用のシンボリックリンク
 set :linked_files, %w{ config/secrets.yml }
 
-# デプロイ処理が終わった後、Unicornを再起動するための記述(ローカル)
-#after 'deploy:publishing', 'deploy:restart'
-#namespace :deploy do
-  #task :restart do
-    #invoke 'unicorn:restart'
-  #end
-#end
-
 # デプロイ処理が終わった後、Unicornを再起動するための記述(本番)
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do

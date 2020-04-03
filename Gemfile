@@ -92,4 +92,5 @@ group :development, :test do
   gem 'capistrano3-unicorn'
 end
 
+#s3用に
 gem 'fog-aws'

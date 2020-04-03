@@ -28,5 +28,4 @@
 
 # githubに画像をあげないため追記
 public/uploads/*
-
 config/secrets.yml
