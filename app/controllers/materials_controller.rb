@@ -12,7 +12,8 @@ class MaterialsController < ApplicationController
   end
 
   def create
-    Material.create(material_params)
+    material_n = Material.new(material_params)
+    redirect_to action: :new unless material_n.save
   end
 
   def show
