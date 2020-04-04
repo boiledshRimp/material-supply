@@ -62,7 +62,7 @@
 
 server '3.115.228.220', user: 'ec2-user', roles: %w{app db web}
 
-#Basic認証用に追加ここから↓
-set :rails_env, "production"
-set :unicorn_rack_env, "production"
-#Basic認証用に追加ここまで↑
+#Basic認証用に追加ここから
+#set :rails_env, "production"
+#set :unicorn_rack_env, "production"
+#Basic認証用に追加ここまで
