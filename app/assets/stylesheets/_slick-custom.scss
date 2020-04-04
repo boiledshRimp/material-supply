@@ -18,3 +18,16 @@
 }
 .multiple .slick-next { right: 1vw;　z-index: 100;}
 .multiple .slick-prev { left: 1vw; z-index: 100;}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.slick-dots {
+  position:static !important;
+  bottom: 0 !important;
+}
+
+ul.multiple.slick-initialized.slick-slider.slick-dotted {
+  margin: 0 0 5vh 0 !important;
+}

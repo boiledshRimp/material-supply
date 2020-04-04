@@ -7,6 +7,10 @@
   padding:0 !important;
 }
 
+.m0{
+  margin:0 !important;
+}
+
 .p7 {
   padding-top:7vh !important;
 }
@@ -15,7 +19,6 @@
   width:80%;
   margin:0 auto;
   min-height: 400px;
-  padding-top: 5vh;
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +89,6 @@ footer{
   background: white;
   display: flex;
   justify-content: center;
-  margin-top:5vh;
 }
 
 ul.material__post__button {
@@ -145,7 +147,6 @@ input[type="file"] {
 
 .contents__img__show {
   margin: auto;
-  margin-top: 5vh;
   width: 100%;
   max-width: 500px;
   text-align: center;
