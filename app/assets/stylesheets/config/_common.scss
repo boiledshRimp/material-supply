@@ -89,6 +89,7 @@ footer{
   background: white;
   display: flex;
   justify-content: center;
+  margin:5vh 0 0 0;
 }
 
 ul.material__post__button {
@@ -109,12 +110,10 @@ ul.material__post__button {
       border-top: 1px solid #0085de;
     }
   }
-  
 }
 
 span.paginate{
   display: inline-block;
-  margin: 1vh 0 0 0;
   width: 100%;
   text-align: center;
 }

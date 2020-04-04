@@ -12,15 +12,16 @@
   }
   ul{
     li{
-      margin-left:1vw;
-      padding: 0.5vw;
-      border-radius: 0.5vw;
+      padding: 2.5vh 0 2.5vh 0;
     }
   }
 }
 ul.info__container__materials.show {
   display: flex;
   justify-content: flex-end;
+  li{
+    margin:0 0 0 1vw;
+  }
 }
 .material_caption{
   padding: 1vh;
