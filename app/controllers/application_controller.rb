@@ -6,18 +6,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   #Basic認証用に追加ここまで
   
-  #protected
-  #def configure_permitted_parameters
-    #devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
-  #end
-
-  #Basic認証用に追加ここから
-  private
-
   protected
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
   end
+
+  #Basic認証用に追加ここから
+  private
 
   def production?
     Rails.env.production?
