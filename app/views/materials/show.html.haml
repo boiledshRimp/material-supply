@@ -27,7 +27,7 @@
         = form.submit "SEND", class: "form__submit"
     - else
       %strong
-        %p コメントはログインしないとできません。
+        %p.attention コメントはログインしないとできません。
     .add_comments
       %h4.comennt コメント一覧
       - if @comments
