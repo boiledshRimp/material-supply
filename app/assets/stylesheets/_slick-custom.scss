@@ -31,3 +31,7 @@
 ul.multiple.slick-initialized.slick-slider.slick-dotted {
   margin: 0 !important;
 }
+
+.slick-prev:before, .slick-next:before {
+  line-height: 0 !important;
+}
