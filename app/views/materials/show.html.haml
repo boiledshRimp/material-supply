@@ -24,7 +24,7 @@
     - if current_user
       = form_with(model: [@material, @comment], local: true, id: "new_comment") do |form|
         = form.text_area :text, placeholder: "コメントする", rows: "2", class: "new_text"
-        = form.submit "SEND", class: "form__submit"
+        = form.submit "コメントを投稿する", class: "form__submit"
     - else
       %strong
         %p.attention コメントはログインしないとできません。
