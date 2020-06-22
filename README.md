@@ -38,6 +38,8 @@
 
 [![Image from Gyazo](https://i.gyazo.com/ba255c9ccd6389c927b064d0c425feb6.gif)](https://gyazo.com/ba255c9ccd6389c927b064d0c425feb6)
 
+[![Image from Gyazo](https://i.gyazo.com/fe16304dc2b54ab7d3b180424bca50e3.gif)](https://gyazo.com/fe16304dc2b54ab7d3b180424bca50e3)
+
 # Features
 
 WEB素材を無料や無許可で自由に使用できるサービスがあればと以前より思い、クリエイターが相互に自由に投稿、使用できる交流アプリを考案しました。
