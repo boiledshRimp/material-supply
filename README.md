@@ -36,7 +36,7 @@
 
 # DEMO
 
-comigsoon
+[![Image from Gyazo](https://i.gyazo.com/ba255c9ccd6389c927b064d0c425feb6.gif)](https://gyazo.com/ba255c9ccd6389c927b064d0c425feb6)
 
 # Features
 
